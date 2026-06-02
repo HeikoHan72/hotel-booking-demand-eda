@@ -14,25 +14,36 @@ This project features a comprehensive and robust Exploratory Data Analysis (EDA)
 
 ### 1. Global Guest Distribution & Origins
 * **Methodology**: Analyzing the top 10 countries of origin based exclusively on effective, successful arrivals (`is_canceled == 0`).
-* **Visualization**: Generating an interactive choropleth world map (`plotly.express`) featuring dynamic hover data (ISO code, absolute guest count, rank, and percentage share).
+* **Visualization**: Generating an interactive choropleth world map (`plotly.express`) featuring dynamic hover data.
 * **Business Value**: Identifying core target markets for optimized, region-specific marketing campaigns.
+
+🔗 **[👉 Click here to open the Interactive World Map (HTML)](./globale_verteilung.html)**
+*(Note: Click the link above to view and interact with the dynamic guest distribution map directly in your browser)*
 
 ### 2. Cancellation Analysis by Hotel Type
 * **Methodology**: Constructing cross-tabulations to calculate the exact cancellation rates for both *City Hotels* and *Resort Hotels*.
 * **Visualization**: Deploying a high-resolution `countplot` for a direct visual comparison of checked-in vs. canceled bookings.
 * **Business Value**: Revealing variations in booking risks depending on the specific hotel category.
 
+🔗 **[👉 Click here to open the Interactive Target Group Analysis (HTML)](./zielgruppen_analyse.html)**
+*(Note: Click the link above to explore the interactive target group breakdown)*
+
 ### 3. Impact of Lead Time on Cancellations
 * **Methodology**: Aggregating key statistical metrics (mean, median, standard deviation, maximum) of the `lead_time` feature, segmented by booking status.
 * **Visualization**: Utilizing a Kernel Density Estimate plot (`kdeplot`) to evaluate whether long-term bookings exhibit a higher probability of cancellation.
 * **Business Value**: Optimizing overbooking models, dynamic pricing strategies, and cancellation policies.
 
+#### Lead Time Density Distribution Plot:
+![Lead Time Density Distribution](./vor%20Laufzeit_verteilung.png)
+
 ---
 
 ## 🚀 Repository Structure
 
-* `hotel_bookings.csv` – The core input dataset.
-* `hotel_analysis.py` – The complete, modularized Python script (structured into executable Spyder code cells `#%%`).
+* `EDA - Hotel Bookings Demand.py` – The complete, modularized Python script.
+* `globale_verteilung.html` – Interactive global guest distribution map (Plotly HTML).
+* `zielgruppen_analyse.html` – Interactive target group cancellation analysis (Plotly HTML).
+* `vor Laufzeit_verteilung.png` – Static density distribution plot (Seaborn PNG).
 * `README.md` – This comprehensive project documentation.
 
 ## 💻 Installation & Usage
@@ -45,4 +56,4 @@ This project features a comprehensive and robust Exploratory Data Analysis (EDA)
    ```bash
    pip install pandas matplotlib seaborn plotly tabulate
    ```
-3. Execute the `hotel_analysis.py` script inside Spyder or your preferred Python IDE.
+3. Execute the `EDA - Hotel Bookings Demand.py` script inside Spyder or your preferred Python IDE.
