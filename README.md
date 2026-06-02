@@ -57,3 +57,4 @@ This project features a comprehensive and robust Exploratory Data Analysis (EDA)
    pip install pandas matplotlib seaborn plotly tabulate
    ```
 3. Execute the `EDA - Hotel Bookings Demand.py` script inside Spyder or your preferred Python IDE.
+  
